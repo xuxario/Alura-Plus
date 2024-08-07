@@ -1,4 +1,12 @@
 :root{
-    --cor_de_fundo: 000000;
-    --branco-pricipal: #ffffff
+    --branco-pricipal:#00030c;
+    --cor-de-fundo:#00030c;
+    --azul:#167bf7;
+    --cinza:#c0c0c0;
+
 }
+body{background-color: var(--cor-de-fundo);
+color: var(--branco-principal);}
+
+*{margin; 0;
+padding: 0;}
