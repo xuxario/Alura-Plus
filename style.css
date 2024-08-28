@@ -1,12 +1,49 @@
 :root{
     --branco-pricipal:#00030c;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
     --cor-de-fundo:#00030c;
-    --azul:#167bf7;
-    --cinza:#c0c0c0;
+    --fonte-principal: 'inter'
 
 }
-body{background-color: var(--cor-de-fundo);
-color: var(--branco-principal);}
+body{
+background-color: var(--cor-de-fundo);
+color: var(--branco-principal);
+font-family: var(--fonte-pricipal);
+font-size: 16px;
+font-weight: 400;
+}
 
-*{margin; 0;
-padding: 0;}
+*{
+    margin; 0;
+padding: 0;
+}
+
+.principal {
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items:center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-pricipal)
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-pricipal);
+}
